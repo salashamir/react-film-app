@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #22254b;
+  color: #fff;
+  margin: 0;
+}
+
+.header {
+  background-color: #373b69;
+  padding: 1rem 0;
+}
+
+.search {
+  font-family: inherit;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  color: #eee;
+  border: 2px solid #22254b;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.container {
+  width: min(85%, 1250px);
+  margin-top: 1rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-container {
+  width: min(85%, 1250px);
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  flex: 1 1 250px;
+  position: relative;
+  background-color: #373b69;
+  margin: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.15);
+}
+
+.movie img {
+  max-width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-overview {
+  color: #333;
+  position: absolute;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+  padding: 1rem;
+  transform: translateY(103%);
+  transition: all 0.25s ease;
+  max-height: 85%;
+  overflow-y: auto;
+}
+
+.movie:hover .movie-overview {
+  transform: translateY(0);
+}
