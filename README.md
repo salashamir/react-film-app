@@ -1,7 +1,20 @@
-<!-- API STUFF -->
+Film Search React App
+The Movie Database APIs used.
 
-featured by poularity: https://api.themoviedb.org/3/discover/movie?api_key=6d393adf79df2c9383e0e8f0c87edb3b&sort_by=popularity.desc&page=1
+Description
+React Application that allows users to search for films and get overview and rating data.
 
-search movies: "https://api.themoviedb.org/3/search/movie?api_key=6d393adf79df2c9383e0e8f0c87edb3b&query="
+Author
+Christian Salazar 2022
 
-images:https://image.tmdb.org/t/p/w1280/
+Goal for this Project
+The goal of this project was to pratice building an application in React and using APIss with React.
+
+Technologies Used:
+React
+CSS
+JavaScript
+The Movie Database APIs
+
+What I learned
+Learned more about structuring my React front end framework and how to separate components and make a custom hook. Also, how to successfully retrieve and output data from an API. 
